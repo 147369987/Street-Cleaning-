@@ -16,11 +16,9 @@ class Paper
     display()
     {
         var paperpos = this.body.position;
-
         push();
         translate(paperpos.x, paperpos.y);
         imageMode(CENTER);
-        
         image(this.image,0,0,100,100);
         pop();
     }
